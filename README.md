@@ -107,6 +107,10 @@ HttpTrigger内のfunction.jsonに対して以下の内容で編集する。
 
 githubなどでソースを保管する。
 
+ここまで作成したソースを以下の場所にも公開しています。
+
+https://github.com/naritomo08/azureapi
+
 ## 展開方法
 
 ### git cloneを実施(本項から実施するときのみ実施。)
@@ -116,8 +120,6 @@ git clone https://github.com/naritomo08/azureapi.git
 cd azureapi.git
 rm -rf .git
 ```
-
-HttpTrigger/__init__.pyがメインコードになる。
 
 ### デプロイ実施
 
@@ -147,7 +149,7 @@ func azure functionapp publish <APP_NAME>
 
 URLを控える。
 
-### 動作テスト(カスタムドメイン)
+### 動作テスト
 
 以下コマンドでテスト可能
 
@@ -160,11 +162,13 @@ curl -X POST -H "Content-Type: application/json" -d '{"name": "John", "age": "30
 
 30という値が返ってくること
 
-### カスタムドメイン設定
+### カスタムドメイン設定(必要に応じ)
 
 AzureDNSで独自ドメイン登録してること。
 
-Azureコンソール操作(後日作成)
+ドメイン名に対応したSSL証明書(pfx形式)も作成していること。
+
+Azureコンソール操作で実施(後日Qiitaへ記載予定)
 
 ### 動作テスト(カスタムドメイン)
 
