@@ -168,7 +168,11 @@ AzureDNSで独自ドメイン登録してること。
 
 ドメイン名に対応したSSL証明書(pfx形式)も作成していること。
 
-Azureコンソール操作で実施(後日Qiitaへ記載予定)
+Azureコンソール操作で実施
+
+設定方法：
+
+[Azure FunctionでJSONパーサーAPIを作ってみる。](https://qiita.com/drafts/80eb6e69128cad675db2)
 
 ### 動作テスト(カスタムドメイン)
 
