@@ -166,7 +166,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"name": "John", "age": "30
 
 AzureDNSで独自ドメイン登録してること。
 
-ドメイン名に対応したSSL証明書(pfx形式)も作成していること。
+ドメイン名に対応したSSL証明書(pfx形式、パスワードあり)も作成していること。
 
 Azureコンソール操作で実施
 
